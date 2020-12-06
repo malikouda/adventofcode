@@ -1,4 +1,3 @@
-# Day 3 Part 1
 hill = []
 with open('./input_3.txt', 'r') as f:
     for line in f:
@@ -17,9 +16,8 @@ def count_trees(hill):
             count += 1
     return count
 
-#print(count_trees(hill))
+print(count_trees(hill))
 
-# Day 3 Part 2
 def count_trees_many_slopes(hill):
     counts = []
     slopes = [[1, 1], [3, 1], [5, 1], [7, 1], [1, 2]]

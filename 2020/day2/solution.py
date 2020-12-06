@@ -1,4 +1,3 @@
-# Day 2 part 1
 passwords = []
 with open('./input_2.txt', 'r') as f:
     for line in f:
@@ -23,9 +22,8 @@ def count_valid(nodes):
         if is_valid(start, stop, letter, password): count += 1
     return count
 
-#print(count_valid(passwords))
+print(count_valid(passwords))
 
-# Day 2 Part 2
 def is_valid_position(i, j, letter, word):
     count = 0    
     for k in [i, j]:
@@ -42,4 +40,4 @@ def count_valid_position(nodes):
         if is_valid_position(i, j, letter, password): count += 1
     return count
 
-#print(count_valid_position(passwords))
+print(count_valid_position(passwords))
